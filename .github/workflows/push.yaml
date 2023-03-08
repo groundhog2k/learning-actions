@@ -28,7 +28,7 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64
           push: true
-          tags: groundhog2k/learning-actions:$IMAGE_VERSION
+          tags: groundhog2k/learning-actions:${{ env.IMAGE_VERSION }}
           build-args: |
             IMAGE_VERSION=${{ env.IMAGE_VERSION }}
           labels: |
