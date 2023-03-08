@@ -1,0 +1,3 @@
+ARG IMAGE_VERSION
+FROM nginx:$IMAGE_VERSION
+RUN touch /test.txt
